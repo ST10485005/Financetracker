@@ -1,36 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="16dp"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/incomeInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter Your Income"
-        android:inputType="numberDecimal"/>
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter your income"
+        android:inputType="numberDecimal" />
 
     <TextView
-        android:id="@+id/tvExpense1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Enter Expense based on category" />
+        android:layout_marginTop="12dp"
+        android:text="Enter Expenses by Category:"
+        android:textSize="22sp" />
 
     <EditText
+        android:id="@+id/tvexpenseName1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/exepensename1"
-        android:hint="Expense Category 1 (eg.,Food)"/>
+        android:layout_height="48dp"
+        android:hint="Expense Category 1 (e.g., Food)" />
 
     <EditText
+        android:id="@+id/tvexpenseAmount1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Amount for category 1"
-        android:inputType="numberDecimal"/>
+        android:layout_height="48dp"
+        android:hint="Amount for Category 1"
+        android:inputType="numberDecimal" />
 
+    <EditText
+        android:id="@+id/tvexpenseName2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Expense Category 2 (e.g., Rent)" />
 
+    <EditText
+        android:id="@+id/tvexpenseAmount2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Amount for Category 2"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/tvexpenseName3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Expense Category 3 (e.g., Entertainment)" />
+
+    <EditText
+        android:id="@+id/tvexpenseAmount3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Amount for Category 3"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/tvexpenseName4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Expense Category 4 (e.g., Utilities)" />
+
+    <EditText
+        android:id="@+id/tvexpenseAmount4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Amount for Category 4"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Balance"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvincomeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvexpensesResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvbalanceResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvfeedbackResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Reset" />
+</LinearLayout>
